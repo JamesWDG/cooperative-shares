@@ -1,0 +1,42 @@
+my task is that already i have ceated two blade files for paid and active plan 
+
+now i want to create only one blade file ok create(just )this ok and also only 
+
+create and store function in controller ok for insertion property ok
+
+but we will always show these two in create show
+we will check plan active things in controller side ok if vendor active resources used then we will force to then paid featured option (we will check redio paid ) if i said yes i want to processed then we will show stripe payment model and then we insert property things ok
+
+before inserting always we will check plan usage and also we will store plan usage tables data during insertion ok and also invoices ok
+
+we just need only one blade file create ok and also store function ok
+
+give me full updated controller ok and also full updated create code ok 
+i am going some codes that i did before so give me updated files ok according to my tasks ok
+<div class="standard-listing-wrapper">
+                <div class="standard-mini-wrapper">
+                    <label for="simple-listing" class="label-para">
+                        <div class="radio-wrapper">
+                            <label class="property-radio-label">
+                                <input type="radio" name="listing" value="simple" id="simple-listing" checked />
+                                <span class="custom-radio"></span>
+                                <p class="property-para">Standard Listing</p>
+                            </label>
+                        </div>
+                        <p class="price-para">$0</p>
+                    </label>
+                </div>
+
+                <div class="standard-mini-wrapper">
+                    <label for="standard-listing" class="label-para">
+                        <div class="radio-wrapper">
+                            <label class="property-radio-label">
+                                <input type="radio" name="listing" value="featured" id="featured-listing">
+                                <span class="custom-radio"></span>
+                                <p class="property-para">Featured Listing</p>
+                            </label>
+                        </div>
+                        <p class="price-para">$349.00</p>
+                    </label>
+                </div>
+            </div>

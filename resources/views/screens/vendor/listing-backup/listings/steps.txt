@@ -1,0 +1,29 @@
+Vendor fills the paid featured listing form and clicks “Submit Now”.
+
+AJAX → backend validatePaidFeaturedListing
+
+Laravel validates all property fields + files.
+
+If invalid → return JSON error → show SweetAlert.
+
+If valid → no save yet, just respond: “Validation passed, please pay”.
+
+On success → open Stripe payment modal.
+
+Vendor enters card, Stripe JS returns stripeToken.
+
+AJAX → backend storePaidFeaturedListing with:
+
+stripeToken
+
+all listing form data + files (from FormData we saved).
+
+Backend:
+
+Charges Stripe.
+
+If success → create listing + listing images (your existing logic).
+
+(Optional) create invoice record.
+
+Frontend: show green toast + info SweetAlert, then redirect.
